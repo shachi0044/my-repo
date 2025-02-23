@@ -1,0 +1,15 @@
+name: Manual Choice
+on:
+  workflow_choice:
+    inputs:
+      log-level:
+        type: choice
+        options:
+          - info
+          - warn
+          - error
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${{ inputs.log-level }}"
