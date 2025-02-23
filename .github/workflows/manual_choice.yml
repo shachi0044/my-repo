@@ -1,6 +1,6 @@
 name: Manual Choice
 on:
-  workflow_choice:
+  workflow_dispatch:
     inputs:
       log-level:
         type: choice
