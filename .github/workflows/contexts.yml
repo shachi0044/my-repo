@@ -5,3 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "${{ github.actor }}"
+      - run: echo "${{ github.run_id }}"
+      - run: echo "${{ github.head_ref }}"
+      - run: echo "${{ github.workspace }}"
+      - run: echo "${{ github.repository }}"
+      - run: echo "${{ github.event }}"
