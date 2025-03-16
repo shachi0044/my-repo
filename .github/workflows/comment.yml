@@ -3,6 +3,7 @@ run-name: Comment
 on: pull_request
 jobs:
   comment:
+    name: comment
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
