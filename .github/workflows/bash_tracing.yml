@@ -1,0 +1,11 @@
+name: Bash tracing
+on: push
+jobs:
+    log:
+        runs-on: ubuntu-latest
+        steps:
+            - run: |
+                set -x
+                echo "This is a traced command"
+                date
+                hostname
